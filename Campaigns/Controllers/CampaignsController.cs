@@ -63,8 +63,8 @@ public class CampaignsController : ControllerBase
         }
     }
 
-    //[Authorize]  //commented out this line to allow access without authentication
-    [AllowAnonymous] //Remove or comment out this line to apply Authentication
+    ///[Authorize]  commented out this line to allow access without authentication
+    [AllowAnonymous] ///Remove or comment out this line to apply Authentication
     [HttpPost("CreateACampaign")]
     [SwaggerOperation(Summary = "Create a new campaign", Description = "Creates a new campaign.")]
     [ProducesResponseType(StatusCodes.Status200OK)]
@@ -102,7 +102,7 @@ public class CampaignsController : ControllerBase
         }
     }
 
-    //[Authorize]  //commented out this line to allow access without authentication
+    //[Authorize]  commented out this line to allow access without authentication
     [AllowAnonymous] //Remove or comment out this line to apply Authentication
     [HttpPut("UpdateACampaign/{id}")]
     [SwaggerOperation(Summary = "Update a campaign by ID", Description = "Updates an existing campaign by its ID.")]
@@ -149,7 +149,7 @@ public class CampaignsController : ControllerBase
         }
     }
 
-    //[Authorize]  //commented out this line to allow access without authentication
+    //[Authorize]  commented out this line to allow access without authentication
     [AllowAnonymous] //Remove or comment out this line to apply Authentication
     [HttpDelete("DeleteACampaign/{id}")]
     [SwaggerOperation(Summary = "Delete a campaign by ID", Description = "Deletes a campaign by its ID.")]
